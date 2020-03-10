@@ -288,8 +288,8 @@ func main() {
 	defer l.Close()
 
 	mainRom := rom{name: "main", activeClients: make(map[string]client)}
-	lolRom := rom{name: "lol", activeClients: make(map[string]client)}
-	kekRom := rom{name: "kek", activeClients: make(map[string]client)}
+	lolRom := rom{name: "otherRom", activeClients: make(map[string]client)}
+	kekRom := rom{name: "random", activeClients: make(map[string]client)}
 
 	rmap := romMap{roms: make(map[string]*rom)}
 	rmap.addRom(&mainRom)
